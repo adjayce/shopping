@@ -1,0 +1,15 @@
+{
+    "artist": "Katy Perry",
+
+    "id": "katyPerry-roar",
+    "images": [
+        "img/music/katyPerry-roar.0.jpg",
+        "img/music/katyPerry-roar.1.jpg"
+
+    ],
+    "name": "KatyPerry  Roar",
+
+    "released": 2013,
+
+    "quantity": 15
+}

@@ -1,0 +1,53 @@
+<app-cart></app-cart>
+<div *ngIf='music !== null'>
+  <img src="../../assets/{{largeDisplayImg}}" class="music" />
+
+  <h1>{{music.name}}</h1>
+
+  <p>{{music.name}}</p>
+
+  <ul class="music-thumbs">
+    <li *ngFor="let img of music.images; let i = index;">
+      <img src="../../assets/{{img}}" (click)=switchedDisplayImg(i) />
+    </li>
+  </ul>
+
+  <h3>Price: {{music.price | currency}}</h3>
+
+  <button   *ngIf="music.quantity !==0" class="btn btn-primary" (click)="addToCart(music)" >Add to Cart</button>
+  <button  *ngIf="music.quantity == 0" class="btn btn-primary" disabled="disabled" >Sold Out</button>
+
+  <ul class="specs">
+    <li>
+      <span>Availability</span>
+      <dl>
+        <dt>Availability</dt>
+        <dd>{{music.quantity}}</dd>
+      </dl>
+    </li>
+
+
+
+    <li>
+      <span>Artist</span>
+      <dl>
+        <dt>Artist Name</dt>
+        <dd>{{music.artist}}</dd>
+      </dl>
+    </li>
+
+
+
+
+
+    <li>
+      <span>Released Year</span>
+      <dl>
+        <dt>Released Year</dt>
+        <dd>{{music.released}}</dd>
+      </dl>
+    </li>
+
+  </ul>
+</div>
+

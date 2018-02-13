@@ -1,0 +1,16 @@
+{
+    "artist": "Avicii",
+
+    "id": "avicii-levels",
+    "images": [
+        "img/music/avicii-levels.0.jpg",
+        "img/music/avicii-levels.1.jpg"
+
+    ], 
+    "name": "Avicii Levels",
+
+    "released": 2013,
+
+
+    "quantity": 50
+}
